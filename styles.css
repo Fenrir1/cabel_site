@@ -1,0 +1,88 @@
+
+:root {
+    --main-green: #17ab25;
+}
+
+body {
+    background: #fff;
+    font-family: Roboto, sans-serif;
+    font-size:  16px;
+}
+
+header {
+    background-color: var(--main-green);    
+}
+
+.main-menu nav {
+    background-color: var(--main-green);    
+}
+
+.btn-next {
+    min-width: 100px;
+    height: 36px;
+    color: #fff;
+    border: 1px solid #019609;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(bottom, #25c234 7%, #019609 26%, #14ad1f 60%, #24c133 95%);
+}
+
+.cabel-video {
+    height: 300px;
+    padding: 10px 300px;
+    position: relative;
+}
+
+.cabel-select-container {
+    flex-grow: 1;
+    padding-top: 60px;
+}
+
+.cabel-select-selector {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+.img-cabel-icon {
+    height: 36px;
+}
+
+.cabel-image {
+    height: 192px;
+}
+
+.cabel-gallery-card {
+    padding: 5px 10px;
+}
+
+.cabel-gallery-card .card {
+    height: 100%;
+    width: 100%;
+}
+
+.cabel-gallery-card .card-body {
+    height: 100px;
+    flex: none;
+}
+.cabel-gallery-card .card-img-top {
+    height: 192px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.cabel-driver-card {
+    padding: 5px 10px;
+    display: none;    
+}
+
+@media screen and (max-width: 992px) { 
+    .cabel-video {
+        height: 300px;
+        width: 100%;
+        padding: 10px 0;
+        overflow: hidden;
+
+
+    }
+}
