@@ -20,7 +20,7 @@
     <script src="main.js"></script>
 
 </head>
-<body>
+<body class="body">
     <header>
         <div class="container main-menu">
             <nav class="navbar navbar-dark">
@@ -29,87 +29,139 @@
         </div>
         
     </header>
-    <div class="container main-content cabel">
-        <div class="cabel-video">    
-            <div class="embed-responsive embed-responsive-16by9">        
-                <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/EngW7tLk6R8" frameborder="0" allow="gyroscope;" allowfullscreen></iframe>
-            </div>    
-        </div>
-        <div class="cabel-select row">
-            <div class="cabel-select-container col-12 col-lg-9">
-                <select name="cabel-select-selector" id="cabel-select-selector" 
-                class="cabel-select-selector" 
-                onChange="selectCabelHandler(this.value)" >
-                    <option value="0">Not selected</option>
-                    <option value="1">cabel 1</option>
-                    <option value="2">cabel 2</option>
-                    <option value="3">cabel 3</option>
-                    <option value="4">cabel 4</option>
-                    <option value="5">cabel 5</option>
-                    <option value="6">cabel 6</option>
-                    <option value="7">cabel 7</option>
-                    <option value="8">cabel 8</option>
-                </select>
-            </div>
-            <div class="cabel-select-image col-12 col-lg-3">
-                <img id="cabel-image" class="cabel-image" src="assets/cab0.jpg" alt="" />
-            </div>
-        </div>
-        <div class="cabel-gallery row">
+    <div class="container main-content content cabel">
 
-            <div class="cabel-gallery-card col-12 col-md-3">            
-                <div class="card text-center">
-                    <img class="card-img-top mb-auto" src="assets/cab1.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">cabel 1</h5>
-                        <button class="btn btn-primary card-link" onClick="selectCabelId(1)" >Выбрать</button>
+        <div class="news-list cabel-video-container container">
+            <div class="news-item">
+            <div class="border1">
+                <a class="title"><b>Инструкция</b></a>
+                <div class="cabel-video">    
+                    <div class="embed-responsive embed-responsive-16by9">        
+                        <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/EngW7tLk6R8" frameborder="0" allow="gyroscope;" allowfullscreen></iframe>
+                    </div>    
+                </div>
+                <div class="clear"></div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="news-list cabel-select container">
+            <div class="news-item">
+            <div class="border1">
+                <a class="title"><b>Тип кабеля</b></a>
+                
+                <div class="intro row">
+                    <div class="cabel-select-container col-12 col-lg-9">
+                        <select name="cabel-select-selector" id="cabel-select-selector" 
+                        class="cabel-select-selector" 
+                        onChange="selectCabelHandler(this.value)" >
+                            <option value="0">Not selected</option>
+                            <option value="1">cabel 1</option>
+                            <option value="2">cabel 2</option>
+                            <option value="3">cabel 3</option>
+                            <option value="4">cabel 4</option>
+                            <option value="5">cabel 5</option>
+                            <option value="6">cabel 6</option>
+                            <option value="7">cabel 7</option>
+                            <option value="8">cabel 8</option>
+                        </select>
+                    </div>
+                    <div class="cabel-select-image col-12 col-lg-3">
+                        <img id="cabel-image" class="cabel-image" src="assets/cab0.jpg" alt="" />
                     </div>
                 </div>
+                <div class="clear"></div>
             </div>
-
-            <div class="cabel-gallery-card col-12 col-md-3">            
-                <div class="card text-center">
-                <img class="card-img-top mb-auto" src="assets/cab3.jpg" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">cabel 3</h5>
-                    <button class="btn btn-primary card-link" onClick="selectCabelId(3)" >Выбрать</button>
-                </div>
-                </div>
-            </div>
-
-            <div class="cabel-gallery-card col-12 col-md-3">            
-                <div class="card text-center">
-                <img class="card-img-top mb-auto" src="assets/cab4.jpg" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">cabel 4</h5>
-                    <button class="btn btn-primary card-link" onClick="selectCabelId(4)" >Выбрать</button>
-                </div>
-                </div>
-            </div>
-
-            <div class="cabel-gallery-card col-12 col-md-3">            
-                <div class="card text-center">
-                <img class="card-img-top mb-auto" src="assets/cab6.jpg" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">cabel 6</h5>
-                    <button class="btn btn-primary card-link" onClick="selectCabelId(6)" >Выбрать</button>
-                </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="cabel-driver row">
-            <div class="cabel-driver-card col-12">            
-                <div class="card text-center">
-                <div class="card-body">
-                    <a id="cabel-driver-link" href="assets/PL23XX_Prolific_DriverInstaller_v200.zip" class="btn btn-primary card-link" >Скачать драйвер</a>
-                </div>
-                </div>
             </div>
         </div>
-        <div class="cabel-buttons d-flex">
-            <button class="button btn-next ml-auto">next</button>
+
+       <!-- <div class="cabel-select container">
+            <div class="row">
+                <div class="cabel-select-container col-12 col-lg-9">
+                    <select name="cabel-select-selector" id="cabel-select-selector" 
+                    class="cabel-select-selector" 
+                    onChange="selectCabelHandler(this.value)" >
+                        <option value="0">Not selected</option>
+                        <option value="1">cabel 1</option>
+                        <option value="2">cabel 2</option>
+                        <option value="3">cabel 3</option>
+                        <option value="4">cabel 4</option>
+                        <option value="5">cabel 5</option>
+                        <option value="6">cabel 6</option>
+                        <option value="7">cabel 7</option>
+                        <option value="8">cabel 8</option>
+                    </select>
+                </div>
+                <div class="cabel-select-image col-12 col-lg-3">
+                    <img id="cabel-image" class="cabel-image" src="assets/cab0.jpg" alt="" />
+                </div>
+            </div>            
+        </div>  -->
+
+        <div class="cabel-gallery container">
+        <div class="row">
+
+            <div class="cabel-gallery-element col-12 col-md-3">
+                <div class="cabel-gallery-card">            
+                    <a class="card-link" onClick="selectCabelId(1)" href="#" >cabel 1</a>
+                    <div><img class="cabel-gallery-img" src="assets/cab1.jpg" alt=""></div>
+                    <div class="clear"></div>             
+                </div>
+            </div>
+            
+            
+            <div class="cabel-gallery-element col-12 col-md-3">
+            <div class="cabel-gallery-card">            
+                <a class="card-link" onClick="selectCabelId(3)" href="#"  >cabel 3</a>
+                <div><img class="cabel-gallery-img" src="assets/cab3.jpg" alt=""></div>
+                <div class="clear"></div>             
+            </div>
+            </div>
+
+            <div class="cabel-gallery-element col-12 col-md-3">
+            <div class="cabel-gallery-card ">            
+                <a class="card-link" onClick="selectCabelId(4)" href="#"  >cabel 4</a>
+                <div><img class="cabel-gallery-img" src="assets/cab4.jpg" alt=""></div>   
+                <div class="clear"></div>          
+            </div>
+            </div>
+
+            <div class="cabel-gallery-element col-12 col-md-3">
+            <div class="cabel-gallery-card ">            
+                <a class="card-link" onClick="selectCabelId(6)" href="#"  >cabel 6</a>
+                <div><img class="cabel-gallery-img" src="assets/cab6.jpg" alt=""></div>
+                <div class="clear"></div>             
+            </div>
+            </div>
+
+        </div>            
         </div>
+
+
+        <div class="news-list cabel-driver container cabel-driver-card">
+            <div class="news-item">
+            <div class="border1">
+                <a class="title"><b>Драйвер</b></a>
+                
+                <div class="intro text-center"><a id="cabel-driver-link" href="assets/PL23XX_Prolific_DriverInstaller_v200.zip" class="btn btn-primary" >Скачать драйвер</a></div>
+                <div class="clear"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="news-list cabel-buttons container">
+            <div class="news-item">
+            <div class="border1">
+                <a class="title"><b>Дальнейшие действия</b></a>
+                
+                <div class="intro text-center"><button class="btn btn-primary" >next</button></div>
+                <div class="clear"></div>
+            </div>
+            </div>
+        </div>
+
+
         
     </div>
     

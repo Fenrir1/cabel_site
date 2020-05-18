@@ -72,14 +72,14 @@ function selectCabelHandler(val) {
         clearSelection();
     }
 
-    console.log(selectedCabel);
+    //console.log(selectedCabel);
 }
 
 function formatSelectCabel(state) {
     if (!state.id) {
       return state.text;
     }
-    console.log(state);
+    // console.log(state);
     let curCabelId = state.element.value;
     let curCabel = cabels.filter(({id}) => { return id == parseInt(curCabelId); })[0] || null;
     if (curCabel) {
